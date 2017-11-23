@@ -1,82 +1,40 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Geeky Drive</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <!-- styles -->
-  <link rel="stylesheet" href="assets/css/fancybox/jquery.fancybox.css">
-  <link href="assets/css/bootstrap.css" rel="stylesheet" />
-  <link href="assets/css/bootstrap-theme.css" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/slippry.css">
-  <link href="assets/css/style.css" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/color/default.css">
-  <!-- =======================================================
-    Theme Name: Groovin
-    Theme URL: https://bootstrapmade.com/groovin-free-bootstrap-theme/
-    Author: BootstrapMade
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
-  <script src="assets/js/modernizr.custom.js"></script>
+<?
+require_once("./common.head.inc");
+?>
 </head>
-
 <body>
-  <header>
+  <? require_once("common.header.inc"); ?>
+  <?
+  	body();
+  ?>
+</body>
+</html>
 
-    <div id="navigation" class="navbar navbar-inverse navbar-fixed-top default" role="navigation">
-      <div class="container">
-
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Geeky Drive</a>
-        </div>
-
-        <div class="navigation">
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <nav>
-              <ul class="nav navbar-nav navbar-right">
-                <li class="current"><a href="#intro">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <!--
-                <li><a href="#works">Works</a></li>
-                -->
-                <li><a href="#contact">Book Now</a></li>
-              </ul>
-            </nav>
-          </div>
-          <!-- /.navbar-collapse -->
-        </div>
-
-      </div>
-    </div>
-
-  </header>
+<?
+function body(){
+?>
   <!-- section intro -->
   <section id="intro" onclick="location.href='#contact'">
     <ul id="slippry-slider">
       <li>
         <a href="#slide1">
-        	<img src="assets/img/slide/91.jpg" alt="Welcome to Geeky Drive! </br><button type='submit' class='btn btn-lg btn-theme'>Book Now</button>">
+        	<img src="../assets/img/slide/91.jpg" alt="Welcome to Geeky Drive! </br><button  class='btn btn-lg btn-theme'>Book Now</button>">
         </a>
       </li>
       <li>
-        <a href="#slide2"><img src="assets/img/slide/6.jpg"  alt="As you think you travel, and As you love you attract </br><button type='submit' class='btn btn-lg btn-theme'>Book Now</button>"></a>
+        <a href="#slide2"><img src="../assets/img/slide/6.jpg"  alt="As you think you travel, and As you love you attract </br><button  class='btn btn-lg btn-theme'>Book Now</button>"></a>
       </li>
       <li>
-        <a href="#slide3"><img src="assets/img/slide/12.jpg" alt="Clarity is the counter balance of profound thoughts. </br><button type='submit' class='btn btn-lg btn-theme'>Book Now</button>"></a>
+        <a href="#slide3"><img src="../assets/img/slide/12.jpg" alt="Clarity is the counter balance of profound thoughts. </br><button class='btn btn-lg btn-theme'>Book Now</button>"></a>
       </li>
     </ul>
   </section>
   <!-- end intro -->
   <!-- Section about -->
-  <section id="about" class="section">
+  <section id="about" class="section" style="display:none">
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -93,7 +51,7 @@
       <div class="row">
         <div class="col-md-3">
           <div class="team-box">
-            <img src="assets/img/dummies/A5x5.jpg" alt="" class="img-responsive" />
+            <img src="../assets/img/dummies/A5x5.jpg" alt="" class="img-responsive" />
             <div class="roles">
               <h5><strong>Aadil</strong></h5>
               <p>
@@ -109,7 +67,7 @@
         </div>
         <div class="col-md-3">
           <div class="team-box">
-            <img src="assets/img/dummies/SA5x5.jpg" alt="" class="img-responsive" />
+            <img src="../assets/img/dummies/SA5x5.jpg" alt="" class="img-responsive" />
             <div class="roles">
               <h5><strong>Saqib Butt</strong></h5>
               <p>
@@ -125,7 +83,7 @@
         </div>
         <div class="col-md-3">
           <div class="team-box">
-            <img src="assets/img/dummies/F5x5.jpg" alt="" class="img-responsive" />
+            <img src="../assets/img/dummies/F5x5.jpg" alt="" class="img-responsive" />
             <div class="roles">
               <h5><strong>Faisal Nazir</strong></h5>
               <p>
@@ -141,9 +99,9 @@
         </div>
         <div class="col-md-3">
           <div class="team-box">
-            <img src="assets/img/dummies/O5x5.jpg" alt="" class="img-responsive" />
+            <img src="../assets/img/dummies/O5x5.jpg" alt="" class="img-responsive" />
             <div class="roles">
-              <h5><strong>Osama Sheikh</strong></h5>
+              <h5><strong>Sheikh Osama</strong></h5>
               <p>
                 Overseas Partner
               </p>
@@ -179,22 +137,22 @@
           <ul class="grid effect" id="grid">
             <li>
               <a class="fancybox" data-fancybox-group="gallery" title="Portfolio name" href="assets/img/portfolio/1.jpg">
-								<img src="assets/img/portfolio/1.jpg" alt="" />
+								<img src="../assets/img/portfolio/1.jpg" alt="" />
 							</a>
             </li>
-            <li><a href="assets/img/portfolio/2.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/2.jpg" alt="" /></a></li>
-            <li><a href="assets/img/portfolio/3.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/3.jpg" alt="" /></a></li>
-            <li><a href="assets/img/portfolio/4.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/4.jpg" alt="" /></a></li>
-            <li><a href="assets/img/portfolio/5.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/5.jpg" alt="" /></a></li>
-            <li><a href="assets/img/portfolio/6.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/6.jpg" alt="" /></a></li>
-            <li><a href="assets/img/portfolio/7.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/7.jpg" alt="" /></a></li>
-            <li><a href="assets/img/portfolio/8.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/8.jpg" alt="" /></a></li>
-            <li><a href="assets/img/portfolio/9.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/9.jpg" alt="" /></a></li>
-            <li><a href="assets/img/portfolio/10.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/10.jpg" alt="" /></a></li>
-            <li><a href="assets/img/portfolio/11.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/11.jpg" alt="" /></a></li>
-            <li><a href="assets/img/portfolio/12.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/12.jpg" alt="" /></a></li>
-            <li><a href="assets/img/portfolio/13.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/13.jpg" alt="" /></a></li>
-            <li><a href="assets/img/portfolio/14.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="assets/img/portfolio/14.jpg" alt="" /></a></li>
+            <li><a href="assets/img/portfolio/2.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="../assets/img/portfolio/2.jpg" alt="" /></a></li>
+            <li><a href="assets/img/portfolio/3.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="../assets/img/portfolio/3.jpg" alt="" /></a></li>
+            <li><a href="assets/img/portfolio/4.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="../assets/img/portfolio/4.jpg" alt="" /></a></li>
+            <li><a href="assets/img/portfolio/5.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="../assets/img/portfolio/5.jpg" alt="" /></a></li>
+            <li><a href="assets/img/portfolio/6.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="../assets/img/portfolio/6.jpg" alt="" /></a></li>
+            <li><a href="assets/img/portfolio/7.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="../assets/img/portfolio/7.jpg" alt="" /></a></li>
+            <li><a href="assets/img/portfolio/8.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="../assets/img/portfolio/8.jpg" alt="" /></a></li>
+            <li><a href="assets/img/portfolio/9.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="../assets/img/portfolio/9.jpg" alt="" /></a></li>
+            <li><a href="assets/img/portfolio/10.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="../assets/img/portfolio/10.jpg" alt="" /></a></li>
+            <li><a href="assets/img/portfolio/11.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="../assets/img/portfolio/11.jpg" alt="" /></a></li>
+            <li><a href="assets/img/portfolio/12.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="../assets/img/portfolio/12.jpg" alt="" /></a></li>
+            <li><a href="assets/img/portfolio/13.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="../assets/img/portfolio/13.jpg" alt="" /></a></li>
+            <li><a href="assets/img/portfolio/14.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="../assets/img/portfolio/14.jpg" alt="" /></a></li>
           </ul>
         </div>
       </div>
@@ -220,6 +178,10 @@
 
     <div class="container">
       <div class="row">
+      	<div class="col-md-12">
+      	</div>
+      </div>
+      <div class="row">
         <div class="col-md-6">
           <h4><i class="icon-envelope"></i><strong>Booking form</strong></h4>
           <p>
@@ -227,11 +189,9 @@
           </p>
           <!-- start contact form -->
           <div class="cform" id="contact-form">
-
-
-            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="sendmessage">Your request has been sent. Your Reference Number is : <span id="reservationNo"> </span>.<br/>Thank you! For more details contact: +923332453090, +923458453090 </div>
             <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
+            <form method="post" action="../contactform/contactform.php" role="form" class="contactForm">
               <div class="form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                 <div class="validation"></div>
@@ -249,14 +209,14 @@
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="days" id="days" placeholder="Number Of Days To Rent The Car" data-rule="days" data-msg="Please enter No. of days to rent the car" />
+                <input type="text" class="form-control" name="reservationDuration" id="reservationDuration" placeholder="Number Of Days To Rent The Car" data-rule="reservationDuration" data-msg="Please enter No. of days to rent the car" />
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <select type="text" class="form-control" name="car" id="car" placeholder="Car" data-rule="car" data-msg="Select car" >
-						<option>Suzuki Cultus - VXRi - 2017</option>
-						<option>Toyota Corolla - XLI 2017 </option>
-						<option>Honda Civic - 1.8 2017 </option>
+                <select type="text" class="form-control" name="carDetails" id="carDetails" placeholder="Car" data-rule="carDetails" data-msg="Select car" >
+						<option value="Suzuki Cultus - VXRi - 2017">Suzuki Cultus - VXRi - 2017</option>
+						<option value="Toyota Corolla - XLI 2017">Toyota Corolla - XLI 2017 </option>
+						<option value="Honda Civic - 1.8 2017 ">Honda Civic - 1.8 2017 </option>
 				</select>
                 <div class="validation"></div>
               </div>
@@ -265,7 +225,9 @@
                 <div class="validation"></div>
               </div>
 
-              <div class="text-center"><button type="submit" class="btn btn-lg btn-theme">Book</button></div>
+              <div class="text-center">
+              	<button name = "submitButton" type="submit" class="btn btn-lg btn-theme">Book</button>
+              </div>
             </form>
           </div>
           <!-- END contact form -->
@@ -321,21 +283,21 @@
   </footer>
   <a href="#" class="scrollup"><i class="fa fa-angle-up fa-2x"></i></a>
   <!-- javascript -->
-  <script src="assets/js/jquery-1.9.1.min.js"></script>
-  <script src="assets/js/jquery.easing.js"></script>
-  <script src="assets/js/classie.js"></script>
-  <script src="assets/js/bootstrap.js"></script>
-  <script src="assets/js/slippry.min.js"></script>
-  <script src="assets/js/nagging-menu.js"></script>
-  <script src="assets/js/jquery.nav.js"></script>
-  <script src="assets/js/jquery.scrollTo.js"></script>
-  <script src="assets/js/jquery.fancybox.pack.js"></script>
-  <script src="assets/js/jquery.fancybox-media.js"></script>
-  <script src="assets/js/masonry.pkgd.min.js"></script>
-  <script src="assets/js/imagesloaded.js"></script>
-  <script src="assets/js/jquery.nicescroll.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
-  <script src="assets/js/AnimOnScroll.js"></script>
+  <script src="../assets/js/jquery-1.9.1.min.js"></script>
+  <script src="../assets/js/jquery.easing.js"></script>
+  <script src="../assets/js/classie.js"></script>
+  <script src="../assets/js/bootstrap.js"></script>
+  <script src="../assets/js/slippry.min.js"></script>
+  <script src="../assets/js/nagging-menu.js"></script>
+  <script src="../assets/js/jquery.nav.js"></script>
+  <script src="../assets/js/jquery.scrollTo.js"></script>
+  <script src="../assets/js/jquery.fancybox.pack.js"></script>
+  <script src="../assets/js/jquery.fancybox-media.js"></script>
+  <script src="../assets/js/masonry.pkgd.min.js"></script>
+  <script src="../assets/js/imagesloaded.js"></script>
+  <script src="../assets/js/jquery.nicescroll.min.js"></script>
+  <script src="../https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+  <script src="../assets/js/AnimOnScroll.js"></script>
   <script>
     new AnimOnScroll(document.getElementById('grid'), {
       minDuration: 0.4,
@@ -361,9 +323,8 @@
     });
   </script>
 
-  <script src="assets/js/custom.js"></script>
-  <script src="contactform/contactform.js"></script>
-
-</body>
-
-</html>
+  <script src="../assets/js/custom.js"></script>
+  <script src="../contactform/contactform.js"></script>
+<?
+}
+?>
