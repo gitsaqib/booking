@@ -135,11 +135,19 @@ function body(){
       <div class="row">
         <div class="col-md-12">
           <ul class="grid effect" id="grid">
-            <li><a href="../assets/img/portfolio/111.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name" ><img src="../assets/img/portfolio/111.jpg" alt="" /></a></li>
-            <li><a href="../assets/img/portfolio/112.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="../assets/img/portfolio/112.jpg" alt="" /></a></li>
-            <li><a href="../assets/img/portfolio/113.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="../assets/img/portfolio/113.jpg" alt="" /></a></li>
-            <li><a href="../assets/img/portfolio/114.jpg" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="../assets/img/portfolio/114.jpg" alt="" /></a></li>
-            <li><a href="../assets/img/portfolio/115.png" class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img src="../assets/img/portfolio/115.png" alt="" /></a></li>
+            <li>
+            	<a href="../assets/img/portfolio/111.jpg" class="fancybox" data-fancybox-group="gallery" title="Wedding">
+            		<img src="../assets/img/portfolio/111.jpg" alt="" />
+            	</a>
+            </li>
+            <li>
+            	<a href="../assets/img/portfolio/112.jpg" class="fancybox" data-fancybox-group="gallery" title="Corporates">
+            		<img src="../assets/img/portfolio/112.jpg" alt="" />
+            	</a>
+            </li>
+            <li><a href="../assets/img/portfolio/113.jpg" class="fancybox" data-fancybox-group="gallery" title="Pakistan Tour"><img src="../assets/img/portfolio/113.jpg" alt="" /></a></li>
+            <li><a href="../assets/img/portfolio/114.jpg" class="fancybox" data-fancybox-group="gallery" title="Events"><img src="../assets/img/portfolio/114.jpg" alt="" /></a></li>
+            <li><a href="../assets/img/portfolio/115.png" class="fancybox" data-fancybox-group="gallery" title="Festivals"><img src="../assets/img/portfolio/115.png" alt="" /></a></li>
           </ul>
         </div>
       </div>
@@ -283,8 +291,8 @@ function body(){
   <script src="../assets/js/masonry.pkgd.min.js"></script>
   <script src="../assets/js/imagesloaded.js"></script>
   <script src="../assets/js/jquery.nicescroll.min.js"></script>
-  <script src="../https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
   <script src="../assets/js/AnimOnScroll.js"></script>
+
   <script>
     new AnimOnScroll(document.getElementById('grid'), {
       minDuration: 0.4,
@@ -309,9 +317,10 @@ function body(){
       )
     });
   </script>
-
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
   <script src="../assets/js/custom.js"></script>
   <script src="../contactform/contactform.js"></script>
+
 <?
 }
 ?>

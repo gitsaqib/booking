@@ -4,12 +4,12 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
   <!-- styles -->
-  <link rel="stylesheet" href="../assets/css/fancybox/jquery.fancybox.css">
+  <link href="../assets/css/fancybox/jquery.fancybox.css" rel="stylesheet" >
   <link href="../assets/css/bootstrap.css" rel="stylesheet" />
   <link href="../assets/css/bootstrap-theme.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/css/slippry.css">
+  <link href="../assets/css/slippry.css" rel="stylesheet" >
   <link href="../assets/css/style.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/color/default.css">
+  <link href="../assets/color/default.css" rel="stylesheet" >
   <!-- =======================================================
     Theme Name: Groovin
     Theme URL: https://bootstrapmade.com/groovin-free-bootstrap-theme/
