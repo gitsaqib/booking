@@ -127,7 +127,7 @@ function body(){
           </div>
           <div class="sub-heading">
             <p>
-              When rains, look for the rainbow. When it gets dark, look for the start.
+              When rains, look for the rainbow. When it gets dark, look for the star.When plans to ride, GeekDrive.com
             </p>
           </div>
         </div>
