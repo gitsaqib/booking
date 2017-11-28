@@ -1,0 +1,1 @@
+<? header("Location: ../bookingform/bookingform.php?addtionControls=".$_REQUEST['for']);?>
